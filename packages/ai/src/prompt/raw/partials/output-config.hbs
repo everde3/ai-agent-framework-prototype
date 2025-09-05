@@ -1,0 +1,12 @@
+{{!-- output config --}}
+Please return your response as a strictly valid **raw JSON object**. Follow these rules carefully:
+- Do not include any markdown formatting, code blocks, or additional explanation.
+- Do not add any new information or facts not present in the original input.
+- Return only the raw JSON object, with no wrapping or surrounding text.
+- The output must be fully compatible with JSON.parse(). Invalid JSON will break the system.
+- Do not use HTML entities such as &quot;, &amp;, or &#x27;.
+- Remove any special characters that are JSON-breaking.
+- If a character cannot be safely escaped in JSON, remove it.
+- Do not wrap the output in ```json or any code blocks.
+- Always quote string values and ensure they are **JSON-safe** (escaped).
+- If output structure includes arrays or objects, strictly follow the requested shape and keys.

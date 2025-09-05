@@ -1,0 +1,43 @@
+You are an expert data analyst tasked with summarizing insights from two different employee engagement survey responses. Each response contains key findings, sentiment breakdowns, examples, themes, and recommendations.
+
+Here are the two individual summaries:
+
+**Summary 1:**
+Question: {{summary_one.question}}
+Cohort: {{summary_one.cohortName}}
+Summary: {{summary_one.summary}}
+Overall Sentiment: {{summary_one.overallSentiment}}
+Positive Examples: {{summary_one.positiveExamples}}
+Mixed Examples: {{summary_one.mixedExamples}}
+Negative Examples: {{summary_one.negativeExamples}}
+Themes: {{summary_one.themes}}
+Recommendations: {{summary_one.recommendations}}
+
+**Summary 2:**
+Question: {{summary_two.question}}
+Cohort: {{summary_two.cohortName}}
+Summary: {{summary_two.summary}}
+Overall Sentiment: {{summary_two.overallSentiment}}
+Positive Examples: {{summary_two.positiveExamples}}
+Mixed Examples: {{summary_two.mixedExamples}}
+Negative Examples: {{summary_two.negativeExamples}}
+Themes: {{summary_two.themes}}
+Recommendations: {{summary_two.recommendations}}
+
+---
+
+**Your Task:**
+- **Overall Sentiment:** Combine the sentiment analysis of both summaries into a single overall sentiment breakdown, indicating the relative percentages of Positive, Mixed, and Negative sentiments.
+- **Consolidated Summary:** Write a concise 3-sentence executive summary that combines the key findings from both summaries. Make sure the tone remains objective and insightful.
+- **Themes:** Combine the themes from both summaries, ensuring there is no repetition. For each theme, provide a brief explanation of the main points mentioned in the responses.
+- **Examples:** Select the most representative examples from both summaries, ensuring to include up to 3 examples for each sentiment (Positive, Mixed, Negative). Use complete responses without truncation or paraphrasing.
+- **Recommendations:** Aggregate the recommendations from both summaries and provide a maximum of 3 actionable suggestions that could be derived from the insights.
+- **Question:** The question that was asked. Do not change the question from the original.
+- **Cohort:** The cohort or team name the question was sent to.
+- **Start Date:** The start date of the analysis window in ISO 8601 format.
+- **End Date:** The end date of the analysis window in ISO 8601 format.
+
+---
+
+Please ensure that your response follows this structure and only includes the consolidated insights from both summaries. Do not include any intermediate steps, calculations, or unrelated information.
+DO NOT EDIT OR CHANGE THE QUESTION OR COHORT OR START DATE OR END DATE.

@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig", // The JSON schema for the tsconfig.json file
+	"display": "Default", // The name of this configuration
+	"compilerOptions": {
+		// Module Resolution
+		"moduleResolution": "node",
+		"esModuleInterop": true, // Enables compatibility with ES modules for CommonJS imports
+		"resolveJsonModule": true, // Allows importing of JSON modules
+
+		// Transpilation
+		"target": "es2022", // The ECMAScript version to compile down to
+		"isolatedModules": true, // Ensures each file can be safely transpiled independently
+		"module": "ES2022", // The module system to use
+		"newLine": "lf", // Specify the end of line sequence to be used when emitting files: ‘CRLF’ (dos) or ‘LF’ (unix).
+
+		// Type Checking
+		"skipLibCheck": true, // Skips type checking for declaration files (*.d.ts)
+		"strict": true, // Enables all strict type checking options
+
+		// Project Settings
+		"forceConsistentCasingInFileNames": true, // Enforces consistent casing in file names
+		"sourceMap": true // Include a sourcemap file that will point the transpiled version of the code to the original source. (useful for debugging)
+	},
+	"exclude": ["node_modules"] // Excludes the node_modules directory from the compilation
+}

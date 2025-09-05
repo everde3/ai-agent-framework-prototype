@@ -1,0 +1,26 @@
+{
+  "name": "@repo/isomorphic-utils",
+  "version": "1.0.0",
+  "license": "ISC",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "bson": "^4.7.2",
+    "date-fns": "^2.29.3",
+    "date-fns-tz": "^2.0.0",
+    "dompurify": "3.2.4",
+    "lodash": "^4.17.21",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  }
+}
